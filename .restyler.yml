@@ -1,0 +1,6 @@
+version: 2
+linters:
+  - name: eslint
+    command: pnpm lint
+  - name: prettier
+    command: pnpm format
