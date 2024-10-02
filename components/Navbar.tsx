@@ -49,45 +49,39 @@ export function Navbar() {
             </div>
             <div className='hidden flex-grow items-center justify-center md:flex'>
               <Menu setActive={setActive}>
-                <MenuItem item='Home' setActive={setActive} active={active}>
-                  <div className='flex flex-col space-y-4 text-sm'>
-                    <HoveredLink
+                  <div className='flex flex-col space-y-4 text-lg'>
+                    <a
                       href='/'
-                      className='text-lg font-bold'
+                      className='text-base'
                       onClick={handleNavItemClick}
                     >
                       Home
-                    </HoveredLink>
+                    </a>
                   </div>
-                </MenuItem>
-                <MenuItem item='About Us' setActive={setActive} active={active}>
-                  <div className='flex flex-col space-y-4 text-sm'>
-                    <HoveredLink
-                      href='/about'
-                      className='text-lg font-bold'
-                      onClick={handleNavItemClick}
-                    >
-                      About Us
-                    </HoveredLink>
-                  </div>
-                </MenuItem>
-                <MenuItem item='Partners' setActive={setActive} active={active}>
-                  <div className='flex flex-col space-y-4 text-sm'>
-                    <HoveredLink
-                      href='/partners'
-                      className='text-lg font-bold'
-                      onClick={handleNavItemClick}
-                    >
-                      Partners
-                    </HoveredLink>
-                  </div>
-                </MenuItem>
+                <div className='flex flex-col space-y-4 text-lg'>
+                  <a
+                    href='/about'
+                    className='text-base'
+                    onClick={handleNavItemClick}
+                  >
+                    About Us
+                  </a>
+                </div>
+                <div className='flex flex-col space-y-4 text-lg'>
+                  <a
+                    href='/partners'
+                    className='text-base'
+                    onClick={handleNavItemClick}
+                  >
+                    Partners
+                  </a>
+                </div>
                 <MenuItem
                   item='The Paddock'
                   setActive={setActive}
                   active={active}
                 >
-                  <div className='grid grid-cols-2 gap-4 text-sm'>
+                  <div className='grid pt-2 grid-cols-2 gap-4 text-center text-lg'>
                     {paddockItems.map((item, index) => (
                       <div key={index}>
                         <HoveredLink
@@ -99,32 +93,24 @@ export function Navbar() {
                     ))}
                   </div>
                 </MenuItem>
-                <MenuItem item='Our Team' setActive={setActive} active={active}>
-                  <div className='flex flex-col space-y-4 text-sm'>
-                    <HoveredLink
-                      href='/team'
-                      className='text-lg font-bold'
-                      onClick={handleNavItemClick}
-                    >
-                      Our Team
-                    </HoveredLink>
-                  </div>
-                </MenuItem>
-                <MenuItem
-                  item='Contact Us'
-                  setActive={setActive}
-                  active={active}
-                >
-                  <div className='flex flex-col space-y-4 text-sm'>
-                    <HoveredLink
-                      href='/contact'
-                      className='text-lg font-bold'
-                      onClick={handleNavItemClick}
-                    >
-                      Contact Us
-                    </HoveredLink>
-                  </div>
-                </MenuItem>
+                <div className='flex flex-col space-y-4 text-lg'>
+                  <a
+                    href='/team'
+                    className='text-base'
+                    onClick={handleNavItemClick}
+                  >
+                    Our Team
+                  </a>
+                </div>
+                <div className='flex flex-col space-y-4 text-lg'>
+                  <a
+                    href='/contact'
+                    className='text-base'
+                    onClick={handleNavItemClick}
+                  >
+                    Contact Us
+                  </a>
+                </div>
               </Menu>
             </div>
             <div className='flex items-center md:hidden'>
