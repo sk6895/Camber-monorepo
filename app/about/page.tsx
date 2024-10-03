@@ -34,8 +34,10 @@ import {
 export default function About() {
   const [isHovered, setIsHovered] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 768);
     };
@@ -93,6 +95,10 @@ export default function About() {
       color: 'hsl(var(--chart-2))',
     },
   } satisfies ChartConfig;
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className='relative min-h-screen overflow-hidden bg-white text-black'>
@@ -222,19 +228,21 @@ export default function About() {
             </h2>
             <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 lg:grid-cols-4'>
               {achievements.map((achievement, index) => (
-                <PinContainer key={index} title={achievement.title}>
-                  <div className='flex h-[8rem] w-[16rem] flex-col p-4 tracking-tight text-slate-100/50'>
-                    <h3 className='!m-0 max-w-xs !pb-2 text-base font-bold text-slate-100'>
-                      {achievement.title}
-                    </h3>
-                    <div className='mt-1 flex items-center text-2xl font-bold text-slate-100'>
-                      {achievement.icon && (
-                        <achievement.icon className='mr-2 text-red-500' />
-                      )}
-                      <span>{achievement.count}</span>
+                <div key={index}>
+                  <PinContainer title={achievement.title}>
+                    <div className='flex h-[8rem] w-[16rem] flex-col p-4 tracking-tight text-slate-100/50'>
+                      <h3 className='!m-0 max-w-xs !pb-2 text-base font-bold text-slate-100'>
+                        {achievement.title}
+                      </h3>
+                      <div className='mt-1 flex items-center text-2xl font-bold text-slate-100'>
+                        {achievement.icon && (
+                          <achievement.icon className='mr-2 text-red-500' />
+                        )}
+                        <span>{achievement.count}</span>
+                      </div>
                     </div>
-                  </div>
-                </PinContainer>
+                  </PinContainer>
+                </div>
               ))}
             </div>
           </motion.div>

@@ -49,15 +49,15 @@ export function Navbar() {
             </div>
             <div className='hidden flex-grow items-center justify-center md:flex'>
               <Menu setActive={setActive}>
-                  <div className='flex flex-col space-y-4 text-lg'>
-                    <a
-                      href='/'
-                      className='text-base'
-                      onClick={handleNavItemClick}
-                    >
-                      Home
-                    </a>
-                  </div>
+                <div className='flex flex-col space-y-4 text-lg'>
+                  <a
+                    href='/'
+                    className='text-base'
+                    onClick={handleNavItemClick}
+                  >
+                    Home
+                  </a>
+                </div>
                 <div className='flex flex-col space-y-4 text-lg'>
                   <a
                     href='/about'
@@ -81,7 +81,7 @@ export function Navbar() {
                   setActive={setActive}
                   active={active}
                 >
-                  <div className='grid pt-2 grid-cols-2 gap-4 text-center text-lg'>
+                  <div className='grid grid-cols-2 gap-4 pt-2 text-center text-lg'>
                     {paddockItems.map((item, index) => (
                       <div key={index}>
                         <HoveredLink
