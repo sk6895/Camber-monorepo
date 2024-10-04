@@ -3,33 +3,12 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BackgroundGradient } from '@/components/ui/background-gradient';
 import { useState, useEffect } from 'react';
-import { FaUsers, FaTrophy, FaCar, FaGraduationCap } from 'react-icons/fa';
+import { FaTrophy, FaCar, FaGraduationCap } from 'react-icons/fa';
 import { PinContainer } from '@/components/ui/3d-pin';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { Badge } from '@/components/ui/badge';
-import { TrendingUp } from 'lucide-react';
-import {
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-  Cell,
-  Tooltip,
-  Legend,
-} from 'recharts';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import {
-  ChartConfig,
-  ChartContainer,
-  ChartTooltip,
-  ChartTooltipContent,
-} from '@/components/ui/chart';
+import { Pie, PieChart, ResponsiveContainer, Cell, Legend } from 'recharts';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { ChartConfig } from '@/components/ui/chart';
 
 export default function About() {
   const [isHovered, setIsHovered] = useState(false);

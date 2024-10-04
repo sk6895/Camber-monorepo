@@ -7,3 +7,4 @@ tsconfig.json @greeenboi
 .prettierrc.json @greeenboi
 .prettierrc.yaml @greeenboi
 .prettier.config.js @greeenboi
+package.json @greeenboi
