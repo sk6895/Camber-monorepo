@@ -1,5 +1,6 @@
 'use client';
 
+import InstagramEmbed from '@/components/InstagramEmbed';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -22,8 +23,9 @@ export default function Home() {
 
   return (
     <main>
+      
       <section
-        className='min-w-screen max-w-screen -mt-24 flex max-h-screen min-h-screen flex-col text-white transition-all ease-in-out'
+        className='min-w-[100%] max-w-[100%] -mt-24 flex max-h-screen min-h-screen flex-col text-white transition-all ease-in-out'
         style={{
           backgroundImage: `url(${images[currentImageIndex]})`,
           backgroundSize: 'cover',
@@ -52,6 +54,11 @@ export default function Home() {
           </h4>
         </div>
       </section>
+
+      <section>
+        <InstagramEmbed />
+      </section>
+
     </main>
   );
 }
