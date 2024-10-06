@@ -44,7 +44,8 @@ export function Navbar() {
                 alt='Logo'
                 width={100}
                 height={100}
-                className='mr-4'
+                className='mr-4 h-auto w-auto'
+                priority
               />
             </div>
             <div className='hidden flex-grow items-center justify-center md:flex'>

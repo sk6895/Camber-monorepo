@@ -13,8 +13,11 @@ const InstagramEmbedContent = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-[580px]">
-      <div className="elfsight-app-c0a42e55-5338-448d-814c-be079af4f814" data-elfsight-app-lazy></div>
+    <div className='relative h-[580px] overflow-hidden'>
+      <div
+        className='elfsight-app-c0a42e55-5338-448d-814c-be079af4f814'
+        data-elfsight-app-lazy
+      ></div>
     </div>
   );
 };

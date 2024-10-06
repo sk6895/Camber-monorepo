@@ -9,9 +9,9 @@ const InstagramEmbed = dynamic(() => import('./InstagramEmbedContent'), {
 
 const InstagramEmbedWrapper = () => {
   return (
-    <section className="p-8">
-      <h1 className="text-center text-5xl font-semibold pb-6">
-        Social <span className="text-red-500">Media</span>
+    <section className='p-8'>
+      <h1 className='pb-6 text-center text-5xl font-semibold'>
+        Social <span className='text-red-500'>Media</span>
       </h1>
       <InstagramEmbed />
     </section>

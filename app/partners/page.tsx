@@ -219,7 +219,7 @@ const page = () => {
                 alt={`${partner.name} logo`}
                 width={220}
                 height={220}
-                className='object-contain'
+                className='h-auto w-auto object-contain'
               />
             </a>
           ))}
