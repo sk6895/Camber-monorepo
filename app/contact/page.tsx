@@ -15,14 +15,14 @@ export default function ContactPage() {
   });
   const [status, setStatus] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     setStatus('Sending...');
 
