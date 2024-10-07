@@ -8,7 +8,7 @@ import { PinContainer } from '@/components/ui/3d-pin';
 import { Badge } from '@/components/ui/badge';
 import { Pie, PieChart, ResponsiveContainer, Cell, Legend } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ChartConfig } from '@/components/ui/chart';
+import { ChartConfig, ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
 
 export default function About() {
   const [isHovered, setIsHovered] = useState(false);
@@ -52,7 +52,12 @@ export default function About() {
     { name: 'Efficiency', value: 100 },
   ];
 
-  const COLORS_STATIC = ['#0088FE', '#00C49F', '#FFBB28'];
+  const COLORS_STATIC = [
+    '#0088FE', 
+    '#00C49F', 
+    '#FFBB28'
+  ];
+  
   const COLORS_DYNAMIC = [
     '#FF8042',
     '#FF4242',
@@ -65,15 +70,17 @@ export default function About() {
     value: {
       label: 'Points',
     },
-    'Dynamic Events': {
+    dynamicEvents: {
       label: 'Dynamic Events',
       color: 'hsl(var(--chart-1))',
     },
-    'Static Events': {
+    staticEvents: {
       label: 'Static Events',
       color: 'hsl(var(--chart-2))',
     },
   } satisfies ChartConfig;
+  
+  
 
   if (!mounted) {
     return null;
@@ -172,27 +179,28 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className='flex justify-center'
             >
-              <motion.div
+                <motion.div
                 animate={{
                   boxShadow: [
-                    '0 0 0 0 rgba(255, 0, 0, 0)',
-                    '0 0 0 10px rgba(255, 0, 0, 0.1)',
-                    '0 0 0 20px rgba(255, 0, 0, 0)',
+                  '0 0 0 0 rgba(255, 0, 0, 0)',
+                  '0 0 0 10px rgba(255, 0, 0, 0.1)',
+                  '0 0 0 20px rgba(255, 0, 0, 0)',
                   ],
+                  borderRadius: '1000px',
                 }}
                 transition={{
                   duration: 1.5,
                   repeat: Infinity,
                   repeatType: 'loop',
                 }}
-              >
+                >
                 <Badge
                   variant='outline'
                   className='border-red-500 p-4 text-lg text-red-500'
                 >
                   Our Goal: Building people, not just Cars!
                 </Badge>
-              </motion.div>
+                </motion.div>
             </motion.div>
           </div>
 
@@ -297,39 +305,41 @@ export default function About() {
                 environment.
               </p>
             </div>
-            <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
+
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <Card className='border-4 border-dashed border-black bg-opacity-20 backdrop-blur-lg backdrop-filter'>
+                <Card className="border-4 border-dashed border-primary bg-primary/5 backdrop-blur-sm">
                   <CardHeader>
                     <CardTitle>Static Events</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ResponsiveContainer width='100%' height={300}>
-                      <PieChart>
-                        <Pie
-                          data={staticEventsData}
-                          cx='50%'
-                          cy='50%'
-                          labelLine={false}
-                          label={({ name }) => `${name}`}
-                          outerRadius={80}
-                          fill='#8884d8'
-                          dataKey='value'
-                        >
-                          {staticEventsData.map((entry, index) => (
-                            <Cell
-                              key={`cell-${index}`}
-                              fill={COLORS_STATIC[index % COLORS_STATIC.length]}
-                            />
-                          ))}
-                        </Pie>
-                        <Legend formatter={(value, entry, index) => value} />
-                      </PieChart>
-                    </ResponsiveContainer>
+                    <ChartContainer config={chartConfig.staticEvents} className="h-[300px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <PieChart>
+                          <Pie
+                            data={staticEventsData}
+                            cx="50%"
+                            cy="50%"
+                            labelLine={false}
+                            outerRadius={80}
+                            fill="#8884d8"
+                            dataKey="value"
+                          >
+                            {staticEventsData.map((entry, index) => (
+                              <Cell
+                                key={`cell-${entry.name}`}
+                                fill={COLORS_STATIC[index % COLORS_STATIC.length]}
+                              />
+                            ))}
+                          </Pie>
+                          <ChartTooltip content={<ChartTooltipContent />} />
+                        </PieChart>
+                      </ResponsiveContainer>
+                    </ChartContainer>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -339,39 +349,39 @@ export default function About() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                <Card className='border-4 border-dashed border-black bg-opacity-20 backdrop-blur-lg backdrop-filter'>
+                <Card className="border-4 border-dashed border-primary bg-primary/5 backdrop-blur-sm">
                   <CardHeader>
                     <CardTitle>Dynamic Events</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ResponsiveContainer width='100%' height={300}>
-                      <PieChart>
-                        <Pie
-                          data={dynamicEventsData}
-                          cx='50%'
-                          cy='50%'
-                          labelLine={false}
-                          label={({ name }) => `${name}`}
-                          outerRadius={80}
-                          fill='#8884d8'
-                          dataKey='value'
-                        >
-                          {dynamicEventsData.map((entry, index) => (
-                            <Cell
-                              key={`cell-${index}`}
-                              fill={
-                                COLORS_DYNAMIC[index % COLORS_DYNAMIC.length]
-                              }
-                            />
-                          ))}
-                        </Pie>
-                        <Legend formatter={(value, entry, index) => value} />
-                      </PieChart>
-                    </ResponsiveContainer>
+                    <ChartContainer config={chartConfig.dynamicEvents} className="h-[300px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <PieChart>
+                          <Pie
+                            data={dynamicEventsData}
+                            cx="50%"
+                            cy="50%"
+                            labelLine={false}
+                            outerRadius={80}
+                            fill="#8884d8"
+                            dataKey="value"
+                          >
+                            {dynamicEventsData.map((entry, index) => (
+                              <Cell
+                                key={`cell-${index}`}
+                                fill={COLORS_DYNAMIC[index % COLORS_DYNAMIC.length]}
+                              />
+                            ))}
+                          </Pie>
+                          <ChartTooltip content={<ChartTooltipContent />} />
+                        </PieChart>
+                      </ResponsiveContainer>
+                    </ChartContainer>
                   </CardContent>
                 </Card>
               </motion.div>
             </div>
+
           </motion.div>
         </motion.div>
       </main>
