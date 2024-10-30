@@ -68,14 +68,14 @@ export default function About() {
 
   const chartConfig = {
     value: {
-      label: 'Points',
+      label: <>Points</>,
     },
     dynamicEvents: {
-      label: 'Dynamic Events',
+      label: <>Dynamic Events</>,
       color: 'hsl(var(--chart-1))',
     },
     staticEvents: {
-      label: 'Static Events',
+      label: <>Static Events</>,
       color: 'hsl(var(--chart-2))',
     },
   } satisfies ChartConfig;
@@ -317,7 +317,7 @@ export default function About() {
                     <CardTitle>Static Events</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ChartContainer config={chartConfig.staticEvents} className="h-[300px]">
+                    <ChartContainer config={chartConfig.staticEvents as ChartConfig} className="h-[300px]">
                       <ResponsiveContainer width="100%" height="100%">
                         <PieChart>
                           <Pie
@@ -354,7 +354,7 @@ export default function About() {
                     <CardTitle>Dynamic Events</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ChartContainer config={chartConfig.dynamicEvents} className="h-[300px]">
+                    <ChartContainer config={chartConfig.dynamicEvents as ChartConfig} className="h-[300px]">
                       <ResponsiveContainer width="100%" height="100%">
                         <PieChart>
                           <Pie
