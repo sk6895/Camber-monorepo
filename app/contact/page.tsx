@@ -15,14 +15,14 @@ export default function ContactPage() {
   });
   const [status, setStatus] = useState('');
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setStatus('Sending...');
 
@@ -160,7 +160,7 @@ export default function ContactPage() {
             </div>
             <Button
               type='submit'
-              className='w-full bg-blue-600 hover:bg-blue-700 rounded-2xl'
+              className='w-full rounded-2xl bg-blue-600 hover:bg-blue-700'
             >
               Submit
             </Button>
