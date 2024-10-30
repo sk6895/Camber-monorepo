@@ -210,26 +210,24 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className='mt-8 w-full'
           >
-            <h2 className='mb-4 text-center text-2xl font-semibold text-red-600'>
+            <h2 className='mb-4 text-center text-3xl font-semibold text-red-600'>
               Our Achievements
             </h2>
-            <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 lg:grid-cols-4'>
+            <div className='grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-4 lg:grid-cols-4'>
               {achievements.map((achievement, index) => (
-                <div key={index}>
-                  <PinContainer title={achievement.title}>
-                    <div className='flex h-[8rem] w-[16rem] flex-col p-4 tracking-tight text-slate-100/50'>
-                      <h3 className='!m-0 max-w-xs !pb-2 text-base font-bold text-slate-100'>
-                        {achievement.title}
-                      </h3>
-                      <div className='mt-1 flex items-center text-2xl font-bold text-slate-100'>
-                        {achievement.icon && (
-                          <achievement.icon className='mr-2 text-red-500' />
-                        )}
-                        <span>{achievement.count}</span>
-                      </div>
+                <PinContainer title={achievement.title} key={index}>
+                  <div className='flex h-[8rem] w-[16rem] flex-col p-4 tracking-tight text-slate-100/50'>
+                    <h3 className='!m-0 max-w-xs !pb-2 text-base font-bold text-slate-100'>
+                      {achievement.title}
+                    </h3>
+                    <div className='mt-1 flex items-center text-2xl font-bold text-slate-100'>
+                      {achievement.icon && (
+                        <achievement.icon className='mr-2 text-red-500' />
+                      )}
+                      <span>{achievement.count}</span>
                     </div>
-                  </PinContainer>
-                </div>
+                  </div>
+                </PinContainer>
               ))}
             </div>
           </motion.div>

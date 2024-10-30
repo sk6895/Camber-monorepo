@@ -34,7 +34,7 @@ export default function Home() {
         }}
       >
         <div className='flex w-full flex-1 flex-col justify-between bg-transparent px-6 pt-40'>
-          <h1 className='text-left text-8xl font-semibold text-shadow-outline-lg'>
+          <h1 className='text-left text-8xl max-md:text-6xl font-semibold text-shadow-outline-lg'>
             The journey to <br /> a Perfection
           </h1>
           <h2 className='text-right text-3xl font-medium text-shadow-outline'>

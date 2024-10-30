@@ -1420,7 +1420,7 @@ export default function TeamPage() {
         <span className='text-black'>Our</span> Team
       </h1>
       <Tabs defaultValue='2021' onValueChange={setActiveYear}>
-        <TabsList className='mb-12 grid w-full grid-cols-3 gap-2 lg:grid-cols-6'>
+        <TabsList className='mb-12 grid w-full grid-cols-3 gap-2 lg:grid-cols-6 overflow-x-auto h-full px-4'>
           <div className='col-span-3 flex justify-center space-x-2 lg:col-span-6'>
             {Object.keys(teamData)
               .reverse()
