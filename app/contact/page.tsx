@@ -76,14 +76,14 @@ export default function ContactPage() {
           <div>
             <h3 className='mb-2 font-semibold'>Feedback and Suggestions</h3>
             <p className='text-sm text-gray-600'>
-              Camber racing
+              Feel free to contact us anytime, and we’ll get back to you.
             </p>
           </div>
           <div>
             <h3 className='mb-2 font-semibold'>Media Inquiries</h3>
             <p className='text-sm text-gray-600'>
               For media-related questions or press inquiries, please contact us
-              at camberMedia@gmail.com.
+              at prcorporate.camberracing@gmail.com.
             </p>
           </div>
         </div>
