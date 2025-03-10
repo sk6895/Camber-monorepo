@@ -54,13 +54,12 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className='mb-5 w-full text-gray-600 lg:w-3/4'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-          adipisci quam ullam natus.
+          Building people,not just cars.
         </p>
-        <p className='mb-2 text-gray-600'>camber@gmail.com</p>
-        <p className='mb-5 text-gray-600'>+91 7898495793</p>
+        <p className='mb-2 text-gray-600'>prcorporate.camberracing@gmail.com</p>
+        <p className='mb-5 text-gray-600'>+91 988491482</p>
         <a
-          href='mailto:camber@gmail.com'
+          href='mailto:prcorporate.camberracing@gmail.com'
           className='mb-10 font-semibold underline'
         >
           Customer Support
