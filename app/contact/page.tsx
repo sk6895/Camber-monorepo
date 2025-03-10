@@ -57,7 +57,7 @@ export default function ContactPage() {
           Building people,not just cars.
         </p>
         <p className='mb-2 text-gray-600'>prcorporate.camberracing@gmail.com</p>
-        <p className='mb-5 text-gray-600'>+91 988491482</p>
+        <p className='mb-5 text-gray-600'>+91 9884901482</p>
         <a
           href='mailto:prcorporate.camberracing@gmail.com'
           className='mb-10 font-semibold underline'
