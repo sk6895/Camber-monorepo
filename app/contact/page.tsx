@@ -76,8 +76,7 @@ export default function ContactPage() {
           <div>
             <h3 className='mb-2 font-semibold'>Feedback and Suggestions</h3>
             <p className='text-sm text-gray-600'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-              molestias sunt ad nostrum minima. Pariatur.
+              Camber racing
             </p>
           </div>
           <div>
