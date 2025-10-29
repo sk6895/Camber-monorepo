@@ -1545,6 +1545,7 @@ const teamData = {
     },
   ]
 };
+const fallbackImg = "/images/SUPRA2025-placeholder.jpg";
 
 export default function TeamPage() {
   const [activeYear, setActiveYear] = useState('2021');
@@ -1587,8 +1588,11 @@ export default function TeamPage() {
                 >
                   <CardContent className='p-0'>
                     <Image
-                      src={member.image}
-                      alt={member.name}
+                      src={typeof member === "string"?
+                        fallbackImg:
+                        member.image || fallbackImg}
+                      alt={typeof member === "string"?
+                        "Team Member": member.name}
                       width={300}
                       height={300}
                       className='h-72 w-full object-cover'
