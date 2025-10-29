@@ -7,6 +7,141 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
 
 const teamData = {
+  2025: [
+    {
+      name: 'Himanshu Kumar',
+      position: 'Captain/Lead Engineer - Manufacturing',
+      image: '',
+    },
+    {
+      name: 'Aryan Nair',
+      position: 'Vice Captain/Lead Engineer - Composites/Manufacturing Engineer',
+      image: ''
+    },
+    {
+      name: 'Shashank Reddy',
+      position: 'Technical Director/Lead Engineer - Powertrain/Manufacturing Engineer ',
+      image: ''
+    },
+    {
+      name: 'Rohith Ramesh',
+      position: 'Project Manager/Lead Engineer - Chasis/Manufacturing Engineer',
+      image: ''
+    },
+    {
+      name: 'Yajna Prasanth K S',
+      position: 'Lead Engineer - Drivetrain/Manufacturing Engineer',
+      image: ''
+    },
+    {
+      name: 'Vaikunth M S',
+      position: 'Lead Engineer - Aerodynamics,Simulation/Suspension Senior Engineer/Public Relation',
+      image: ''
+    },
+    {
+      name: 'Vedeshwar R',
+      position: 'Lead Engineer - Design/Chasis & Simulation Engineer/Team Recruitment & Recruit Manager',
+      image: ''
+    },
+    {
+      name: 'Shivang Nayyar',
+      position: 'Lead Engineer - Intake',
+      image: ''
+    },
+    {
+      name: 'Riju Saha',
+      position: 'Lead Engineer - Media/Finance',
+      image: ''
+    },
+    {
+      name: 'Krishang Srivastava',
+      position: 'Lead Engineer - Paddock/Aerodynamics & Brakes Engineer',
+      image: ''
+    },
+    {
+      name: 'Arunava Mandal',
+      position: 'Lead Engineer - Suspension/Steering, Wheel & Tyres Engineer',
+      image: ''
+    },
+    {
+      name: 'Jahnvi Singh',
+      position: 'Lead Engineer - tyres/Steering & Wheel Engineer',
+      image: ''
+    },
+    {
+      name: 'Kushal Pudel',
+      position: 'Lead Engineer - Electrical',
+      image: ''
+    },
+    {
+      name: 'Devara Nagaraju Naidu',
+      position: 'Lead Engineer - Brakes/Composites Engineer',
+      image: ''
+    },
+    {
+      name: 'Nishanth Vydula',
+      position: ':ead Engineer - Steering/Wheel, Tyres & Suspension Engineer',
+      image: ''
+    },
+    {
+      name: 'Shouryaman Manhas',
+      position: 'Lead Engineer - Exhaust',
+      image: ''
+    },
+    {
+      name: 'Srishti Kumari',
+      position: 'Lead - Corporate',
+      image: ''
+    },
+    {
+     name: 'Alan Griffin',
+     position: 'Chassis & Simulation Engineer',
+     image: '' 
+    },
+    {
+      name: 'Darsh Pitalia',
+      position: 'Drivetrain Engineer',
+      image: ''
+    },
+    {
+      name: 'Eniyavan K',
+      position: 'Chassis & Suspension Engineer',
+      image: ''
+    },
+    {
+      name: 'Francis Solomon',
+      position: 'Powertrain & Electrical Engineer',
+      image: ''
+    },
+    {
+      name: 'Hamza S',
+      position: 'Brakes Engineer/Corporate',
+      image: ''
+    },
+    {
+      name: 'TM Sakthiprasad',
+      position: 'Composities & Brakes Engineer',
+      image: ''
+    },
+    {
+      name: 'Varun Jalanmanchili',
+      position: 'Aerodynamics Engineer',
+      image: ''
+    },
+    {
+      name: 'Yuvraj Jariwala',
+      position: 'Team Design & Simulation Engineer',
+      image: ''
+    },
+    {
+      name: 'Jeryl Jeeva',
+      position: 'Intake & Exhaust Engineer',
+      image: ''
+    }
+  ],
+  2024: ["data"],
+  2023: ["data"],
+  2022: ["data"],
   2021: [
     {
       name: 'Kshitij Singh',
@@ -1408,7 +1543,7 @@ const teamData = {
       position: 'Fabrication',
       image: '/images/team/2011/poojith raj kalluru.jpg',
     },
-  ],
+  ]
 };
 
 export default function TeamPage() {
@@ -1419,6 +1554,7 @@ export default function TeamPage() {
       <h1 className='mb-16 text-center text-7xl font-bold text-red-500'>
         <span className='text-black'>Our</span> Team
       </h1>
+      <p className="text-black">DATA TO BE ENTERED</p>
       <Tabs defaultValue='2021' onValueChange={setActiveYear}>
         <TabsList className='mb-12 grid h-full w-full grid-cols-3 gap-2 overflow-x-auto px-4 lg:grid-cols-6'>
           <div className='col-span-3 flex justify-center space-x-2 lg:col-span-6'>
@@ -1461,7 +1597,7 @@ export default function TeamPage() {
                       <h3 className='mb-3 text-xl font-semibold'>
                         {member.name}
                       </h3>
-                      <p className='text-md text-gray-600'>{member.position}</p>
+                        <p className='text-md text-gray-600'>{member.position}</p>
                     </div>
                   </CardContent>
                 </Card>
