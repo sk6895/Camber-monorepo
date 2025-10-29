@@ -11,137 +11,134 @@ const teamData = {
     {
       name: 'Himanshu Kumar',
       position: 'Captain/Lead Engineer - Manufacturing',
-      image: '',
+      image: '/images/SUPRA2025-placeholder.jpg',
     },
     {
       name: 'Aryan Nair',
       position: 'Vice Captain/Lead Engineer - Composites/Manufacturing Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Shashank Reddy',
       position: 'Technical Director/Lead Engineer - Powertrain/Manufacturing Engineer ',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Rohith Ramesh',
       position: 'Project Manager/Lead Engineer - Chasis/Manufacturing Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Yajna Prasanth K S',
       position: 'Lead Engineer - Drivetrain/Manufacturing Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Vaikunth M S',
       position: 'Lead Engineer - Aerodynamics,Simulation/Suspension Senior Engineer/Public Relation',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Vedeshwar R',
       position: 'Lead Engineer - Design/Chasis & Simulation Engineer/Team Recruitment & Recruit Manager',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Shivang Nayyar',
       position: 'Lead Engineer - Intake',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Riju Saha',
       position: 'Lead Engineer - Media/Finance',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Krishang Srivastava',
       position: 'Lead Engineer - Paddock/Aerodynamics & Brakes Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Arunava Mandal',
       position: 'Lead Engineer - Suspension/Steering, Wheel & Tyres Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Jahnvi Singh',
       position: 'Lead Engineer - tyres/Steering & Wheel Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Kushal Pudel',
       position: 'Lead Engineer - Electrical',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Devara Nagaraju Naidu',
       position: 'Lead Engineer - Brakes/Composites Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Nishanth Vydula',
       position: ':ead Engineer - Steering/Wheel, Tyres & Suspension Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Shouryaman Manhas',
       position: 'Lead Engineer - Exhaust',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Srishti Kumari',
       position: 'Lead - Corporate',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
      name: 'Alan Griffin',
      position: 'Chassis & Simulation Engineer',
-     image: '' 
+     image: '/images/SUPRA2025-placeholder.jpg' 
     },
     {
       name: 'Darsh Pitalia',
       position: 'Drivetrain Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Eniyavan K',
       position: 'Chassis & Suspension Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Francis Solomon',
       position: 'Powertrain & Electrical Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Hamza S',
       position: 'Brakes Engineer/Corporate',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'TM Sakthiprasad',
       position: 'Composities & Brakes Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Varun Jalanmanchili',
       position: 'Aerodynamics Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Yuvraj Jariwala',
       position: 'Team Design & Simulation Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     },
     {
       name: 'Jeryl Jeeva',
       position: 'Intake & Exhaust Engineer',
-      image: ''
+      image: '/images/SUPRA2025-placeholder.jpg'
     }
   ],
-  2024: ["data"],
-  2023: ["data"],
-  2022: ["data"],
   2021: [
     {
       name: 'Kshitij Singh',
@@ -1545,7 +1542,6 @@ const teamData = {
     },
   ]
 };
-const fallbackImg = "/images/SUPRA2025-placeholder.jpg";
 
 export default function TeamPage() {
   const [activeYear, setActiveYear] = useState('2021');
@@ -1588,11 +1584,8 @@ export default function TeamPage() {
                 >
                   <CardContent className='p-0'>
                     <Image
-                      src={typeof member === "string"?
-                        fallbackImg:
-                        member.image || fallbackImg}
-                      alt={typeof member === "string"?
-                        "Team Member": member.name}
+                      src={member.image}
+                      alt={member.name}
                       width={300}
                       height={300}
                       className='h-72 w-full object-cover'
