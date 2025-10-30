@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BackgroundGradient } from '@/components/ui/background-gradient';
 import { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {
   FaCog,
   FaCarSide,
