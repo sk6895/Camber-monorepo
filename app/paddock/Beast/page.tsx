@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BackgroundGradient } from '@/components/ui/background-gradient';
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import {
   FaCog,
   FaCarSide,
@@ -23,6 +23,10 @@ import { IconType } from 'react-icons';
 import { Badge } from '@/components/ui/badge';
 
 export default function BeastPage() {
+  useEffect(() => {
+  // @ts-ignore
+  import('bootstrap/dist/js/bootstrap.bundle.min.js');
+  }, []);
   const [isHovered, setIsHovered] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 

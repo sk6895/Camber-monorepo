@@ -1551,7 +1551,7 @@ export default function TeamPage() {
       <h1 className='mb-16 text-center text-7xl font-bold text-red-500'>
         <span className='text-black'>Our</span> Team
       </h1>
-      <Tabs defaultValue='2021' onValueChange={setActiveYear}>
+      <Tabs defaultValue='2025' onValueChange={setActiveYear}>
         <TabsList className='mb-12 grid h-full w-full grid-cols-3 gap-2 overflow-x-auto px-4 lg:grid-cols-6'>
           <div className='col-span-3 flex justify-center space-x-2 lg:col-span-6'>
             {Object.keys(teamData)
