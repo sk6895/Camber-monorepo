@@ -40,8 +40,8 @@ export function Navbar() {
           <div className='flex items-center justify-between'>
             <div className='flex items-center'>
               <Image
-                src='/images/logo.png'
-                alt='Logo'
+                src='/images/partners/SRM IST.png'
+                alt='Partner Logo'
                 width={100}
                 height={100}
                 className='mr-4 h-auto w-auto'
@@ -125,6 +125,16 @@ export function Navbar() {
                   <Bars3Icon className='h-6 w-6' />
                 )}
               </button>
+            </div>
+            <div className='flex items-center'>
+              <Image
+                src='/images/logo.png'
+                alt='Logo'
+                width={100}
+                height={100}
+                className='h-auto w-auto'
+                priority
+              />
             </div>
           </div>
           <AnimatePresence>
