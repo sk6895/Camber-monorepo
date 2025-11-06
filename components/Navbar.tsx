@@ -40,7 +40,7 @@ export function Navbar() {
           <div className='flex items-center justify-between'>
             <div className='flex items-center'>
               <Image
-                src='public/partners/SRM IST.png'
+                src='/partners/SRM IST.png'
                 alt='Partner Logo'
                 width={100}
                 height={100}
