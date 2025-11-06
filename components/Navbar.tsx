@@ -38,13 +38,13 @@ export function Navbar() {
       <div className={cn('fixed inset-x-6 top-6 z-50')}>
         <div className='rounded-2xl border border-gray-200 bg-white px-4 py-4 shadow-lg dark:border-gray-700 dark:bg-gray-800 md:px-10 md:py-3'>
           <div className='flex items-center justify-between'>
-            <div className='flex items-center'>
+            <div className='h-16 flex items-center'>
               <Image
                 src='/partners/SRM IST.png'
                 alt='Partner Logo'
-                width={100}
-                height={100}
-                className='mr-4 h-10 w-auto'
+                width={150}
+                height={50}
+                className='h-full w-auto object-contain'
                 priority
               />
             </div>
