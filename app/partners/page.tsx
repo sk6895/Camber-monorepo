@@ -32,7 +32,7 @@ import SolidworksImage from '../../public/partners/Solidworks.png';
 import SrmistImage from '../../public/partners/SRM IST.png';
 import SudarshanImage from '../../public/partners/Sudarshan.png';
 import ZircotecImage from '../../public/partners/Zircotec.png';
-
+import VTransysImage from '../../public/partners/VTransys.png';
 import Image from 'next/image';
 
 const Partners = [
@@ -195,6 +195,11 @@ const Partners = [
     name: 'Zircotec',
     logo: ZircotecImage,
     link: 'https://www.zircotec.com/',
+  },
+  {
+    name: 'VTransys',
+    logo: VTransysImage,
+    link: 'https://vtransys.in/',
   },
 ];
 
