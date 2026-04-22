@@ -29,9 +29,9 @@ const teamData = {
       image: '/images/team/2025/Rohith_Ramesh.jpg'
     },
     {
-      name: 'Yajna Prasanth K S',
+      name: 'Yajna Prashanth K S',
       position: 'Lead Engineer - Drivetrain/Manufacturing Engineer',
-      image: '/images/team/2025/Yajna_Prasanth.jpg'
+      image: '/images/team/2025/Yajna_Prashanth.jpg'
     },
     {
       name: 'Vaikunth M S',
@@ -51,7 +51,7 @@ const teamData = {
     {
       name: 'Riju Saha',
       position: 'Lead Engineer - Media/Finance',
-      image: '/images/team/2025/Riju_Saha.jpg'
+      image: '/images/team/2025/Riju_saha.jpg'
     },
     {
       name: 'Krishang Srivastava',
