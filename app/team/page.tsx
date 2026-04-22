@@ -11,67 +11,67 @@ const teamData = {
     {
       name: 'Himanshu Kumar',
       position: 'Captain/Lead Engineer - Manufacturing',
-      image: '/images/SUPRA2025-placeholder.jpg',
+      image: '../../components/2025-26 TeamMembersImages/Himanshu_Kumar.png',
     },
     {
       name: 'Aryan Nair',
       position: 'Vice Captain/Lead Engineer - Composites/Manufacturing Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Aryan_Nair.png'
     },
     {
       name: 'Shashank Reddy',
       position: 'Technical Director/Lead Engineer - Powertrain/Manufacturing Engineer ',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Shashank_Reddy.png'
     },
     {
       name: 'Rohith Ramesh',
       position: 'Project Manager/Lead Engineer - Chasis/Manufacturing Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Rohith_Ramesh.png'
     },
     {
       name: 'Yajna Prasanth K S',
       position: 'Lead Engineer - Drivetrain/Manufacturing Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Yajna_Prasanth.png'
     },
     {
       name: 'Vaikunth M S',
       position: 'Lead Engineer - Aerodynamics,Simulation/Suspension Senior Engineer/Public Relation',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Vaikunth_MS.png'
     },
     {
       name: 'Vedeshwar R',
       position: 'Lead Engineer - Design/Chasis & Simulation Engineer/Team Recruitment & Recruit Manager',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Vedeshwar_R.png'
     },
     {
-      name: 'Shivang Nayyar',
+      name: 'Shivang Nair',
       position: 'Lead Engineer - Intake',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Shivang_Nair.png'
     },
     {
       name: 'Riju Saha',
       position: 'Lead Engineer - Media/Finance',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Riju_Saha.png'
     },
     {
       name: 'Krishang Srivastava',
       position: 'Lead Engineer - Paddock/Aerodynamics & Brakes Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Krishang.png'
     },
     {
       name: 'Arunava Mandal',
       position: 'Lead Engineer - Suspension/Steering, Wheel & Tyres Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Arunava_Mandal.png'
     },
     {
       name: 'Jahnvi Singh',
       position: 'Lead Engineer - tyres/Steering & Wheel Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Jahnvi_Singh.png'
     },
     {
-      name: 'Kushal Pudel',
+      name: 'Kushal Poudal',
       position: 'Lead Engineer - Electrical',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Kushal_Poudal.png'
     },
     {
       name: 'Devara Nagaraju Naidu',
@@ -81,17 +81,17 @@ const teamData = {
     {
       name: 'Nishanth Vydula',
       position: ':ead Engineer - Steering/Wheel, Tyres & Suspension Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Nishanth.png'
     },
     {
       name: 'Shouryaman Manhas',
       position: 'Lead Engineer - Exhaust',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Shouryaman_Manhas.png'
     },
     {
       name: 'Srishti Kumari',
       position: 'Lead - Corporate',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Srishti_Kumari.png'
     },
     {
      name: 'Alan Griffin',
@@ -106,17 +106,17 @@ const teamData = {
     {
       name: 'Eniyavan K',
       position: 'Chassis & Suspension Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Eniyavan_K.png'
     },
     {
       name: 'Francis Solomon',
       position: 'Powertrain & Electrical Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Francis_Solomon.png'
     },
     {
       name: 'Hamza S',
       position: 'Brakes Engineer/Corporate',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Hamza.png'
     },
     {
       name: 'TM Sakthiprasad',
@@ -131,12 +131,12 @@ const teamData = {
     {
       name: 'Yuvraj Jariwala',
       position: 'Team Design & Simulation Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Yuvraj.png'
     },
     {
       name: 'Jeryl Jeeva',
       position: 'Intake & Exhaust Engineer',
-      image: '/images/SUPRA2025-placeholder.jpg'
+      image: '../../components/2025-26 TeamMembersImages/Jeryl.png'
     }
   ],
   2021: [
