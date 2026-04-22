@@ -51,7 +51,7 @@ const teamData = {
     {
       name: 'Riju Saha',
       position: 'Lead Engineer - Media/Finance',
-      image: '/images/team/2025/Riju_saha.jpg'
+      image: '/images/team/2025/Riju_shah.jpg'
     },
     {
       name: 'Krishang Srivastava',
