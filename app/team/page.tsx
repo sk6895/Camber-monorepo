@@ -11,67 +11,67 @@ const teamData = {
     {
       name: 'Himanshu Kumar',
       position: 'Captain/Lead Engineer - Manufacturing',
-      image: '../../images/team/2025/Himanshu_Kumar.jpg',
+      image: '/images/team/2025/Himanshu_Kumar.jpg',
     },
     {
       name: 'Aryan Nair',
       position: 'Vice Captain/Lead Engineer - Composites/Manufacturing Engineer',
-      image: '../../images/team/2025/Aryan_Nair.jpg'
+      image: '/images/team/2025/Aryan_Nair.jpg'
     },
     {
       name: 'Shashank Reddy',
       position: 'Technical Director/Lead Engineer - Powertrain/Manufacturing Engineer ',
-      image: '../../images/team/2025/Shashank_Reddy.jpg'
+      image: '/images/team/2025/Shashank_Reddy.jpg'
     },
     {
       name: 'Rohith Ramesh',
       position: 'Project Manager/Lead Engineer - Chasis/Manufacturing Engineer',
-      image: '../../images/team/2025/Rohith_Ramesh.jpg'
+      image: '/images/team/2025/Rohith_Ramesh.jpg'
     },
     {
       name: 'Yajna Prasanth K S',
       position: 'Lead Engineer - Drivetrain/Manufacturing Engineer',
-      image: '../../images/team/2025/Yajna_Prasanth.jpg'
+      image: '/images/team/2025/Yajna_Prasanth.jpg'
     },
     {
       name: 'Vaikunth M S',
       position: 'Lead Engineer - Aerodynamics,Simulation/Suspension Senior Engineer/Public Relation',
-      image: '../../images/team/2025/Vaikunth_MS.jpg'
+      image: '/images/team/2025/Vaikunth_MS.jpg'
     },
     {
       name: 'Vedeshwar R',
       position: 'Lead Engineer - Design/Chasis & Simulation Engineer/Team Recruitment & Recruit Manager',
-      image: '../../images/team/2025/Vedeshwar_R.jpg'
+      image: '/images/team/2025/Vedeshwar_R.jpg'
     },
     {
       name: 'Shivang Nair',
       position: 'Lead Engineer - Intake',
-      image: '../../images/team/2025/Shivang_Nair.jpg'
+      image: '/images/team/2025/Shivang_Nair.jpg'
     },
     {
       name: 'Riju Saha',
       position: 'Lead Engineer - Media/Finance',
-      image: '../../images/team/2025/Riju_Saha.jpg'
+      image: '/images/team/2025/Riju_Saha.jpg'
     },
     {
       name: 'Krishang Srivastava',
       position: 'Lead Engineer - Paddock/Aerodynamics & Brakes Engineer',
-      image: '../../images/team/2025/Krishang.jpg'
+      image: '/images/team/2025/Krishang.jpg'
     },
     {
       name: 'Arunava Mandal',
       position: 'Lead Engineer - Suspension/Steering, Wheel & Tyres Engineer',
-      image: '../../images/team/2025/Arunava_Mandal.jpg'
+      image: '/images/team/2025/Arunava_Mandal.jpg'
     },
     {
       name: 'Jahnvi Singh',
       position: 'Lead Engineer - tyres/Steering & Wheel Engineer',
-      image: '../../images/team/2025/Jahnvi_Singh.jpg'
+      image: '/images/team/2025/Jahnvi_Singh.jpg'
     },
     {
       name: 'Kushal Poudal',
       position: 'Lead Engineer - Electrical',
-      image: '../../images/team/2025/Kushal_Poudal.jpg'
+      image: '/images/team/2025/Kushal_Poudal.jpg'
     },
     {
       name: 'Devara Nagaraju Naidu',
@@ -80,18 +80,18 @@ const teamData = {
     },
     {
       name: 'Nishanth Vydula',
-      position: ':ead Engineer - Steering/Wheel, Tyres & Suspension Engineer',
-      image: '../../public/images/team/2025/Nishanth.jpg'
+      position: 'Lead Engineer - Steering/Wheel, Tyres & Suspension Engineer',
+      image: '/images/team/2025/Nishanth.jpg'
     },
     {
       name: 'Shouryaman Manhas',
       position: 'Lead Engineer - Exhaust',
-      image: '../../images/team/2025/Shouryaman_Manhas.jpg'
+      image: '/images/team/2025/Shouryaman_Manhas.jpg'
     },
     {
       name: 'Srishti Kumari',
       position: 'Lead - Corporate',
-      image: '../../images/team/2025/Srishti_Kumari.jpg'
+      image: '/images/team/2025/Srishti_Kumari.jpg'
     },
     {
      name: 'Alan Griffin',
@@ -106,17 +106,17 @@ const teamData = {
     {
       name: 'Eniyavan K',
       position: 'Chassis & Suspension Engineer',
-      image: '../../images/team/2025/Eniyavan_K.jpg'
+      image: '/images/team/2025/Eniyavan_K.jpg'
     },
     {
       name: 'Francis Solomon',
       position: 'Powertrain & Electrical Engineer',
-      image: '../../images/team/2025/Francis_Solomon.jpg'
+      image: '/images/team/2025/Francis_Solomon.jpg'
     },
     {
       name: 'Hamza S',
       position: 'Brakes Engineer/Corporate',
-      image: '../../images/team/2025/Hamza.jpg'
+      image: '/images/team/2025/Hamza.jpg'
     },
     {
       name: 'TM Sakthiprasad',
@@ -131,12 +131,12 @@ const teamData = {
     {
       name: 'Yuvraj Jariwala',
       position: 'Team Design & Simulation Engineer',
-      image: '../../images/team/2025/Yuvraj.jpg'
+      image: '/images/team/2025/Yuvraj.jpg'
     },
     {
       name: 'Jeryl Jeeva',
       position: 'Intake & Exhaust Engineer',
-      image: '../../images/team/2025/Jeryl.jpg'
+      image: '/images/team/2025/Jeryl.jpg'
     }
   ],
   2021: [
